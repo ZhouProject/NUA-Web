@@ -57,7 +57,7 @@ Start designing a wireframe for your final project’s website.
 - [Figma 101 (Course)](https://designlab.com/figma-101-course/lessons)  
 
 ## Exercise 4: Responsive Design Basics
-Make your Exercise 2a webpage responsive.  
+Make your Exercise 2 webpage responsive.  
 
 ### Responsive Styling Tasks
 - Use media queries to adjust text size on smaller screens.  
