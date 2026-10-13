@@ -5,15 +5,7 @@
 - [CodePen](https://codepen.io/) – Front-end coding sandbox  
 - [Figma](https://www.figma.com/) – Online tool for UI design & prototyping  
 
-## Exercise 1: UI Design
-Pick a social media or streaming platform and suggest ways to improve its design.  
-
-### Steps
-1. Identify design issues such as layout, colour schemes, and usability.  
-2. Use Figma to redesign the interface with improvements.  
-3. Focus on clear navigation, readability, and consistency.  
-
-## Exercise 2a: Basic HTML & CSS Formatting
+## Exercise 1: Basic HTML & CSS Formatting
 Write a short text (3-5 paragraphs) and format it using HTML & CSS.  
 
 ### HTML Elements to Use
@@ -34,7 +26,7 @@ Write a short text (3-5 paragraphs) and format it using HTML & CSS.
 - [CSS Text Styling](https://www.w3schools.com/css/css_text.asp)  
 - [Adding Fonts in CSS](https://www.w3schools.com/css/css3_fonts.asp)  
 
-## Exercise 2b: CSS Box Model & Hover States
+## Exercise 2: CSS Box Model & Hover States
 Apply different CSS box model properties and hover effects to style your text and layout.  
 
 ### Box Model Styling Tasks
