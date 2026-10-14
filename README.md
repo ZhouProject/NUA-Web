@@ -44,17 +44,95 @@ Apply different CSS box model properties and hover effects to style your text an
 - [CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp)  
 - [CSS Hover Effects](https://www.w3schools.com/cssref/sel_hover.asp)  
 
-## Exercise 3: Wireframing & Website Planning
-Start designing a wireframe for your final project’s website.  
+## Exercise 3: Make It Move — CSS Transitions & Transforms
+### Part A — Smooth Out Your Hovers (Transitions)
 
-### Steps
-1. Choose a website idea (portfolio, personal blog, small business, fan page, etc.).  
-2. Use Figma to create a wireframe of your layout.  
-3. Plan the main sections (e.g., header, about, contact).  
+Hover over the boxes you styled in Exercise 2. Notice how the colour and shadow jump instantly? Let’s fix that.
+- Add a transition to your `<div>` so the background colour changes smoothly on hover.
+- Add a second transition so the box-shadow changes at a different speed from the colour.
+- Try three different easing values on the same element (linear, ease-in, ease-out). Which one feels most natural?
+- Add a delay to one transition. How long can the delay be before it feels broken?
 
-### Figma Learning Resources
-- [Wireframing in Figma (Video)](https://www.youtube.com/watch?v=D4NyQ5iOMF0)  
-- [Figma 101 (Course)](https://designlab.com/figma-101-course/lessons)  
+```css
+.box {
+  transition: background-color 0.4s ease, box-shadow 1s ease-out;
+}
+```
+
+### Part B — Transform Playground
+
+Give each of your boxes or paragraphs its own personality on hover. Use at least three of these:
+
+- Lift: move it up a little: transform: translateY(-10px);
+- Grow: make it bigger: transform: scale(1.1);
+- Tilt: rotate it: transform: rotate(-3deg);
+- Lean: skew it: transform: skewX(10deg);
+- Combo: use two at once: transform: translateY(-10px) rotate(2deg);
+
+Remember to add transform to your transition, or the movement will jump instead of glide:
+```css
+.box {
+  transition: transform 0.3s ease-out;
+}
+.box:hover {
+  transform: translateY(-10px) rotate(2deg);
+}
+```
+Tip: Give each box its own class (.box-1, .box-2…) so each one can move differently. That’s a quick class selector review from Week 2.
+
+Part C — Playful Challenge (choose one)
+
+Option 1: The Shy Button
+Add a `<button>` to your page that runs away when the cursor gets close.
+
+```css
+button {
+  transition: transform 0.2s ease-out;
+}
+button:hover {
+  transform: translate(150px, -40px) rotate(20deg);
+}
+```
+Can you still click it? Try different distances and speeds to make it more (or less) annoying.
+
+Option 2: The Flip Card 🃏
+Make a card that flips over in 3D to show a hidden message on the back. This uses the parent/child relationship from Week 2: the parent sets the perspective, and the child does the flipping.
+
+```html
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">Hover me</div>
+    <div class="card-back">Surprise! 🎉</div>
+  </div>
+</div>
+```
+```css
+.card {
+  width: 250px;
+  height: 160px;
+  perspective: 600px;              /* parent sets the 3D space */
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);      /* child flips */
+}
+.card-front, .card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;     /* hide the side facing away */
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+```
+Give the front and back different background colours, padding and borders so you can see which side is showing. That’s a box model review from Exercise 2. Then try changing perspective to 200px and then 2000px. What changes?
+
 
 ## Exercise 4: Responsive Design Basics
 Make your Exercise 2 webpage responsive.  
