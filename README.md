@@ -63,11 +63,11 @@ Hover over the boxes you styled in Exercise 2. Notice how the colour and shadow 
 
 Give each of your boxes or paragraphs its own personality on hover. Use at least three of these:
 
-- Lift: move it up a little: transform: translateY(-10px);
-- Grow: make it bigger: transform: scale(1.1);
-- Tilt: rotate it: transform: rotate(-3deg);
-- Lean: skew it: transform: skewX(10deg);
-- Combo: use two at once: transform: translateY(-10px) rotate(2deg);
+- Lift (move it up a little): `transform: translateY(-10px);`
+- Grow (make it bigger): `transform: scale(1.1);`
+- Tilt (rotate it): `transform: rotate(-3deg);`
+- Lean (skew it): `transform: skewX(10deg);`
+- Combo (use two at once): `transform: translateY(-10px) rotate(2deg);`
 
 Remember to add transform to your transition, or the movement will jump instead of glide:
 ```css
