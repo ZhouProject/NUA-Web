@@ -1,9 +1,8 @@
 # HTML & CSS Lab Exercises
 
-## Online Code Editors & Tools
-- [MIMIC Project](https://mimicproject.com/about) – Interactive coding environment  
-- [CodePen](https://codepen.io/) – Front-end coding sandbox  
-- [Figma](https://www.figma.com/) – Online tool for UI design & prototyping  
+## CSS Animation Examples (try to build similar effects by yourself!)
+- [Animista](https://animista.net/)
+- [Animate.css](https://animate.style/#documentation)
 
 ## Exercise 1: Basic HTML & CSS Formatting
 Write a short text (3-5 paragraphs) and format it using HTML & CSS.  
