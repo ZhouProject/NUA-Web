@@ -2,7 +2,7 @@
 
 ## CSS Animation Examples (try to build similar effects by yourself!)
 - [Animista](https://animista.net/)
-- [Animate.css](https://animate.style/#documentation)
+- [Animate.css](https://animate.style/)
 
 ## Exercise 1: Basic HTML & CSS Formatting
 Write a short text (3-5 paragraphs) and format it using HTML & CSS.  
